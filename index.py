@@ -3,7 +3,6 @@ import bpy
 import cv2
 import threading
 from time import time
-import tensorflow as tf
 
 # --------------------------
 # Propriedadws a serem usadas no painel
@@ -79,7 +78,6 @@ class StartButton(bpy.types.Operator):
     return True
 
   def invoke(self, context, event):
-    self.sess = tf.compat.v1.Session()
     self.frame_count = 0
     self.isFinished = False
     self.isProcessing = False
