@@ -1,0 +1,6 @@
+[submodule "tf_pose_estimation"]
+	path = tf_pose_estimation
+	url = https://github.com/phablulo/tf-pose-estimation
+[submodule "baseline"]
+	path = baseline
+	url = https://github.com/phablulo/3d-pose-baseline
