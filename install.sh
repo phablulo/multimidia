@@ -20,4 +20,8 @@ FILEID=0BxWzojlLp259MF9qSFpiVjl0cU0
 wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate "https://docs.google.com/uc?export=download&id=$FILEID" -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=$FILEID" -O experiments.tar.gz && rm -rf /tmp/cookies.txt
 tar xvzf experiments.tar.gz
 
+# coisas gerais
+sudo apt-get install opencv
+sudo pip3 install opencv opencv-python opencv-contrib-python
+
 echo "pronto!"
